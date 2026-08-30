@@ -1,0 +1,87 @@
+name: Update DIS Daily Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 08:45 Asia/Bangkok = 01:45 UTC
+    # Tue-Sat Bangkok
+    - cron: "45 1 * * 2-6"
+
+permissions:
+  contents: write
+
+jobs:
+  update-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch production daily report
+        run: |
+          mkdir -p public
+
+          curl \
+            --fail \
+            --silent \
+            --show-error \
+            --location \
+            --retry 3 \
+            --retry-delay 5 \
+            "https://disrpt-1049943602814.web.app/daily-report" \
+            -o public/daily_run_latest.json
+
+      - name: Validate JSON
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path("public/daily_run_latest.json")
+          data = json.loads(p.read_text())
+
+          required = [
+              "status",
+              "target_session",
+              "decision",
+              "m1",
+              "m2",
+              "m3",
+              "macro",
+          ]
+
+          missing = [k for k in required if k not in data]
+
+          if missing:
+              raise SystemExit(
+                  "Missing required keys: " + ", ".join(missing)
+              )
+
+          if data.get("status") != "PASS":
+              raise SystemExit(
+                  f"Production aggregate status is not PASS: "
+                  f"{data.get('status')}"
+              )
+
+          print("JSON_VALIDATION=PASS")
+          print("TARGET_SESSION=" + str(data.get("target_session")))
+          print("STATUS=" + str(data.get("status")))
+          PY
+
+      - name: Publish only when changed
+        run: |
+          if git diff --quiet -- public/daily_run_latest.json; then
+            echo "REPORT_CHANGED=NO"
+            echo "Nothing to commit."
+          else
+            echo "REPORT_CHANGED=YES"
+
+            git config user.name "github-actions[bot]"
+            git config user.email \
+              "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git add public/daily_run_latest.json
+            git commit -m "Update DIS daily report"
+            git push
+          fi
