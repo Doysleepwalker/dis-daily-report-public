@@ -71,7 +71,9 @@ jobs:
 
       - name: Publish only when changed
         run: |
-          if git diff --quiet -- public/daily_run_latest.json; then
+          git add public/daily_run_latest.json
+
+          if git diff --cached --quiet; then
             echo "REPORT_CHANGED=NO"
             echo "Nothing to commit."
           else
@@ -81,7 +83,6 @@ jobs:
             git config user.email \
               "41898282+github-actions[bot]@users.noreply.github.com"
 
-            git add public/daily_run_latest.json
             git commit -m "Update DIS daily report"
             git push
           fi
