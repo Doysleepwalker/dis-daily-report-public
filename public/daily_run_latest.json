@@ -1,0 +1,133 @@
+{
+  "checks": {
+    "all_upstream_status_pass": true,
+    "cross_stage_target_equal": true,
+    "m1_macro_pre_event_cap_link": true,
+    "m2_candidate_integrity_543": true,
+    "m2_count_reconciliation": true,
+    "m2_m3_row_link": true,
+    "m2_m3_run_id_link": true,
+    "m3_ready_m456_link": true,
+    "m456_decision_failsafe": true,
+    "macro_adjusted_cap_contract": true,
+    "macro_m456_final_cap_link": true,
+    "macro_multiplier_contract": true,
+    "source_generations_captured": true
+  },
+  "contract": "DIS_DAILY_AGGREGATE_CONTRACT_V1",
+  "database_mutation": false,
+  "decision": {
+    "actionable": false,
+    "blockers": [
+      "PORTFOLIO_STATE_REQUIRED",
+      "CORE_BOOST_SIGNAL_SOURCE_REQUIRED"
+    ],
+    "candidate_count": 27,
+    "final_tactical_cap_pct": 50.0,
+    "m6_status": "CORE_BOOST_SIGNAL_SOURCE_REQUIRED",
+    "preview_top2": [
+      {
+        "actual_risk_pct_tpv": 0.75,
+        "assumed_entry": 110.39590475418044,
+        "capped_position_pct_tpv": 17.8224,
+        "entry_low": 109.57023811454889,
+        "execution_rr": 1.733407,
+        "grade": "A+",
+        "m3_rr": 2.0,
+        "position_cap_applied": false,
+        "raw_position_pct_tpv": 17.8224,
+        "risk_budget_pct_tpv": 0.75,
+        "score": 98.0,
+        "setup": "PULLBACK",
+        "stop": 105.75023811454889,
+        "stop_distance_pct": 4.208187,
+        "target": 118.4487380739962,
+        "ticker": "SCHW"
+      },
+      {
+        "actual_risk_pct_tpv": 0.75,
+        "assumed_entry": 138.59919004134193,
+        "capped_position_pct_tpv": 24.134062,
+        "entry_low": 137.55202489664524,
+        "execution_rr": 1.635318,
+        "grade": "A+",
+        "m3_rr": 2.0,
+        "position_cap_applied": false,
+        "raw_position_pct_tpv": 24.134062,
+        "risk_budget_pct_tpv": 0.75,
+        "score": 93.0,
+        "setup": "PULLBACK",
+        "stop": 134.29202489664522,
+        "stop_distance_pct": 3.107641,
+        "target": 145.6427726136903,
+        "ticker": "AWK"
+      }
+    ]
+  },
+  "generated_at": "2026-08-29T19:46:01.574269+00:00",
+  "linkage": {
+    "m1_run_id": "M1-20260828-0ba3629c",
+    "m2_run_id": "m2_20260828_a13a04c13b3c",
+    "m3_run_id": "m2_20260828_a13a04c13b3c"
+  },
+  "m1": {
+    "pre_event_cap_pct": 75.0,
+    "regime": "RISK_ON",
+    "score": 73.55
+  },
+  "m2": {
+    "candidate_count": 543,
+    "eligible": 538,
+    "rejected": 5
+  },
+  "m3": {
+    "m3_results_written": 538,
+    "ready_count": 27,
+    "state_distribution": {
+      "READY": 27,
+      "REJECT": 488,
+      "WATCH": 23
+    }
+  },
+  "macro": {
+    "event_adjusted_cap_pct": 75.0,
+    "event_count": 0,
+    "event_risk_multiplier": 1.0,
+    "final_event_level": "LOW"
+  },
+  "massive_api_requests_by_artifact": {
+    "m2": 0,
+    "m3": 0,
+    "m456": 0,
+    "macro_input": 0,
+    "macro_overlay": 0
+  },
+  "portfolio_mutation": false,
+  "publication_contract": {
+    "canonical_object": "output/daily_run_v1.json",
+    "conditional_write": "GENERATION_COMPARE_AND_SWAP",
+    "latest_object": "output/daily_run_latest.json",
+    "stable_reader_object": "output/daily_run_latest.json"
+  },
+  "source_generations": {
+    "daily": 1788030246407055,
+    "m1": 1788031324646661,
+    "m2": 1788016326966649,
+    "m3": 1788017954146850,
+    "m456": 1788021831955754,
+    "macro_input": 1788020902478959,
+    "macro_overlay": 1788021179045263
+  },
+  "source_objects": {
+    "daily": "output/daily_incremental_audit.json",
+    "m1": "output/production_m1_audit.json",
+    "m2": "output/production_m2_commit_compact.json",
+    "m3": "output/production_m3_commit_compact.json",
+    "m456": "output/m456_dry_run_v1_compact.json",
+    "macro_input": "output/macro_events_v1.json",
+    "macro_overlay": "output/macro_event_overlay_v1.json"
+  },
+  "status": "PASS",
+  "target_session": "2026-08-28",
+  "version": "PRODUCTION_DAILY_AGGREGATE_V1"
+}
