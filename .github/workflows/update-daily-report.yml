@@ -3,9 +3,9 @@ name: Update DIS Daily Report
 on:
   workflow_dispatch:
   schedule:
-    # 08:45 Asia/Bangkok = 01:45 UTC
-    # Tue-Sat Bangkok
-    - cron: "45 1 * * 2-6"
+    # 09:15 Asia/Bangkok = 02:15 UTC
+    # Tue-Sat Bangkok; intentionally after the 08:00 GCP production scheduler
+    - cron: "15 2 * * 2-6"
 
 permissions:
   contents: write
@@ -49,6 +49,9 @@ jobs:
               "m2",
               "m3",
               "macro",
+              "checks",
+              "contract",
+              "version",
           ]
 
           missing = [k for k in required if k not in data]
@@ -64,9 +67,31 @@ jobs:
                   f"{data.get('status')}"
               )
 
+          if data.get("contract") != "DIS_DAILY_AGGREGATE_CONTRACT_V1":
+              raise SystemExit(
+                  f"Unexpected contract: {data.get('contract')}"
+              )
+
+          if data.get("version") != "PRODUCTION_DAILY_AGGREGATE_V1":
+              raise SystemExit(
+                  f"Unexpected version: {data.get('version')}"
+              )
+
+          failed_checks = [
+              k for k, v in data.get("checks", {}).items()
+              if v is not True
+          ]
+
+          if failed_checks:
+              raise SystemExit(
+                  "Aggregate checks failed: " + ", ".join(failed_checks)
+              )
+
           print("JSON_VALIDATION=PASS")
           print("TARGET_SESSION=" + str(data.get("target_session")))
           print("STATUS=" + str(data.get("status")))
+          print("CONTRACT=" + str(data.get("contract")))
+          print("VERSION=" + str(data.get("version")))
           PY
 
       - name: Publish only when changed
