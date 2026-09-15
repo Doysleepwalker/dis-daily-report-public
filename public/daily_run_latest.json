@@ -22,60 +22,60 @@
       "PORTFOLIO_STATE_REQUIRED",
       "CORE_BOOST_SIGNAL_SOURCE_REQUIRED"
     ],
-    "candidate_count": 22,
-    "final_tactical_cap_pct": 37.5,
+    "candidate_count": 26,
+    "final_tactical_cap_pct": 50.0,
     "m6_status": "CORE_BOOST_SIGNAL_SOURCE_REQUIRED",
     "preview_top2": [
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 56.35265427615715,
-        "capped_position_pct_tpv": 3.688229,
-        "entry_high": 56.35265427615715,
-        "entry_low": 55.22336430960713,
-        "execution_rr": 1.852178,
+        "assumed_entry": 375.8934663566197,
+        "capped_position_pct_tpv": 15.876443,
+        "entry_high": 375.8934663566197,
+        "entry_low": 373.4663341084508,
+        "execution_rr": 1.794973,
         "grade": "A+",
         "m3_rr": 2.0,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 3.688229,
+        "raw_position_pct_tpv": 15.876443,
         "risk_budget_pct_tpv": 0.75,
-        "score": 99.0,
+        "score": 96.0,
         "setup": "PULLBACK",
-        "stop": 44.89336430960713,
-        "stop_distance_pct": 20.33496,
-        "target": 77.57729925943215,
-        "ticker": "HPE"
+        "stop": 358.1363341084508,
+        "stop_distance_pct": 4.72398,
+        "target": 407.7670324807042,
+        "ticker": "TRV"
       },
       {
-        "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 978.535,
-        "capped_position_pct_tpv": 9.832761,
-        "entry_high": 978.535,
-        "entry_low": 970.32,
-        "execution_rr": 1.834904,
+        "actual_risk_pct_tpv": 0.660327,
+        "assumed_entry": 332.27,
+        "capped_position_pct_tpv": 25.0,
+        "entry_high": 332.27,
+        "entry_low": 330.81,
+        "execution_rr": 1.750464,
         "grade": "A+",
         "m3_rr": 2.0,
-        "position_cap_applied": false,
-        "raw_position_pct_tpv": 9.832761,
+        "position_cap_applied": true,
+        "raw_position_pct_tpv": 28.395027,
         "risk_budget_pct_tpv": 0.75,
-        "score": 97.0,
+        "score": 96.0,
         "setup": "BREAKOUT",
-        "stop": 903.8966337096824,
-        "stop_distance_pct": 7.627562,
-        "target": 1115.4892325806352,
-        "ticker": "LITE"
+        "stop": 323.49372717320955,
+        "stop_distance_pct": 2.641308,
+        "target": 347.6325456535808,
+        "ticker": "AAPL"
       }
     ]
   },
-  "generated_at": "2026-09-10T01:05:45.507719+00:00",
+  "generated_at": "2026-09-15T01:05:34.800967+00:00",
   "linkage": {
-    "m1_run_id": "M1-20260908-dc494c9d",
-    "m2_run_id": "m2_20260908_3ae279eb4bec",
-    "m3_run_id": "m2_20260908_3ae279eb4bec"
+    "m1_run_id": "M1-20260911-9eed623d",
+    "m2_run_id": "m2_20260911_99ba2d1c1bb2",
+    "m3_run_id": "m2_20260911_99ba2d1c1bb2"
   },
   "m1": {
     "pre_event_cap_pct": 50.0,
     "regime": "NEUTRAL",
-    "score": 63.15
+    "score": 57.0
   },
   "m2": {
     "candidate_count": 543,
@@ -84,18 +84,18 @@
   },
   "m3": {
     "m3_results_written": 538,
-    "ready_count": 22,
+    "ready_count": 26,
     "state_distribution": {
-      "READY": 22,
-      "REJECT": 512,
-      "WATCH": 4
+      "READY": 26,
+      "REJECT": 501,
+      "WATCH": 11
     }
   },
   "macro": {
-    "event_adjusted_cap_pct": 37.5,
-    "event_count": 3,
-    "event_risk_multiplier": 0.75,
-    "final_event_level": "HIGH"
+    "event_adjusted_cap_pct": 50.0,
+    "event_count": 0,
+    "event_risk_multiplier": 1.0,
+    "final_event_level": "WATCH"
   },
   "massive_api_requests_by_artifact": {
     "m2": 0,
@@ -112,13 +112,13 @@
     "stable_reader_object": "output/daily_run_latest.json"
   },
   "source_generations": {
-    "daily": 1789002124313464,
-    "m1": 1789002158999489,
-    "m2": 1789002262107214,
-    "m3": 1789002282107116,
-    "m456": 1789002329360725,
-    "macro_input": 1789002300861860,
-    "macro_overlay": 1789002314956188
+    "daily": 1789434118998276,
+    "m1": 1789434161539713,
+    "m2": 1789434250393760,
+    "m3": 1789434269882714,
+    "m456": 1789434321149278,
+    "macro_input": 1789434291042427,
+    "macro_overlay": 1789434303469861
   },
   "source_objects": {
     "daily": "output/daily_incremental_audit.json",
@@ -130,6 +130,6 @@
     "macro_overlay": "output/macro_event_overlay_v1.json"
   },
   "status": "PASS",
-  "target_session": "2026-09-08",
+  "target_session": "2026-09-11",
   "version": "PRODUCTION_DAILY_AGGREGATE_V1"
 }
