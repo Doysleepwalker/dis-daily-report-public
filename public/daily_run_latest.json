@@ -22,60 +22,60 @@
       "PORTFOLIO_STATE_REQUIRED",
       "CORE_BOOST_SIGNAL_SOURCE_REQUIRED"
     ],
-    "candidate_count": 26,
+    "candidate_count": 31,
     "final_tactical_cap_pct": 50.0,
     "m6_status": "CORE_BOOST_SIGNAL_SOURCE_REQUIRED",
     "preview_top2": [
       {
-        "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 502.6712775145766,
-        "capped_position_pct_tpv": 20.835285,
-        "entry_high": 502.6712775145766,
-        "entry_low": 498.9568062135585,
-        "execution_rr": 1.692077,
+        "actual_risk_pct_tpv": 0.697008,
+        "assumed_entry": 17.42,
+        "capped_position_pct_tpv": 25.0,
+        "entry_high": 17.42,
+        "entry_low": 17.28,
+        "execution_rr": 1.567612,
         "grade": "A+",
         "m3_rr": 2.0,
-        "position_cap_applied": false,
-        "raw_position_pct_tpv": 20.835285,
+        "position_cap_applied": true,
+        "raw_position_pct_tpv": 26.900684,
         "risk_budget_pct_tpv": 0.75,
-        "score": 99.0,
-        "setup": "PULLBACK",
-        "stop": 484.5768062135585,
-        "stop_distance_pct": 3.599663,
-        "target": 533.2885131650858,
-        "ticker": "MSFT"
+        "score": 97.0,
+        "setup": "BREAKOUT",
+        "stop": 16.934324616125433,
+        "stop_distance_pct": 2.788033,
+        "target": 18.181350767749137,
+        "ticker": "VTRS"
       },
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 192.5212619650423,
-        "capped_position_pct_tpv": 17.088865,
-        "entry_high": 192.5212619650423,
-        "entry_low": 191.22184508739426,
-        "execution_rr": 1.769318,
+        "assumed_entry": 431.4514517422662,
+        "capped_position_pct_tpv": 7.819912,
+        "entry_high": 431.4514517422662,
+        "entry_low": 427.42137064433456,
+        "execution_rr": 1.853912,
         "grade": "A+",
         "m3_rr": 2.0,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 17.088865,
+        "raw_position_pct_tpv": 7.819912,
         "risk_budget_pct_tpv": 0.75,
-        "score": 98.0,
+        "score": 96.0,
         "setup": "PULLBACK",
-        "stop": 184.07184508739425,
-        "stop_distance_pct": 4.388823,
-        "target": 207.47097040386637,
-        "ticker": "EXPD"
+        "stop": 390.07137064433454,
+        "stop_distance_pct": 9.590901,
+        "target": 508.1664922912321,
+        "ticker": "WAT"
       }
     ]
   },
-  "generated_at": "2026-09-23T01:05:49.699991+00:00",
+  "generated_at": "2026-09-26T01:05:49.564084+00:00",
   "linkage": {
-    "m1_run_id": "M1-20260921-6ef92201",
-    "m2_run_id": "m2_20260921_6f819aba5ab4",
-    "m3_run_id": "m2_20260921_6f819aba5ab4"
+    "m1_run_id": "M1-20260924-20ebe400",
+    "m2_run_id": "m2_20260924_5b7c05d85754",
+    "m3_run_id": "m2_20260924_5b7c05d85754"
   },
   "m1": {
     "pre_event_cap_pct": 50.0,
     "regime": "NEUTRAL",
-    "score": 59.65
+    "score": 59.35
   },
   "m2": {
     "candidate_count": 543,
@@ -84,11 +84,11 @@
   },
   "m3": {
     "m3_results_written": 538,
-    "ready_count": 26,
+    "ready_count": 31,
     "state_distribution": {
-      "READY": 26,
-      "REJECT": 498,
-      "WATCH": 14
+      "READY": 31,
+      "REJECT": 492,
+      "WATCH": 15
     }
   },
   "macro": {
@@ -112,13 +112,13 @@
     "stable_reader_object": "output/daily_run_latest.json"
   },
   "source_generations": {
-    "daily": 1790125320566462,
-    "m1": 1790125371786202,
-    "m2": 1790125458684104,
-    "m3": 1790125486057708,
-    "m456": 1790125538115640,
-    "macro_input": 1790125509138484,
-    "macro_overlay": 1790125521259481
+    "daily": 1790384524459130,
+    "m1": 1790384560335882,
+    "m2": 1790384658277386,
+    "m3": 1790384682289397,
+    "m456": 1790384734280294,
+    "macro_input": 1790384708116054,
+    "macro_overlay": 1790384719667309
   },
   "source_objects": {
     "daily": "output/daily_incremental_audit.json",
@@ -130,6 +130,6 @@
     "macro_overlay": "output/macro_event_overlay_v1.json"
   },
   "status": "PASS",
-  "target_session": "2026-09-21",
+  "target_session": "2026-09-24",
   "version": "PRODUCTION_DAILY_AGGREGATE_V1"
 }
