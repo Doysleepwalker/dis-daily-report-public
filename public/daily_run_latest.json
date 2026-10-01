@@ -22,60 +22,60 @@
       "PORTFOLIO_STATE_REQUIRED",
       "CORE_BOOST_SIGNAL_SOURCE_REQUIRED"
     ],
-    "candidate_count": 28,
+    "candidate_count": 19,
     "final_tactical_cap_pct": 37.5,
     "m6_status": "CORE_BOOST_SIGNAL_SOURCE_REQUIRED",
     "preview_top2": [
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 292.9807155315106,
-        "capped_position_pct_tpv": 10.221444,
-        "entry_high": 292.9807155315106,
-        "entry_low": 290.8432111712235,
-        "execution_rr": 1.850854,
+        "assumed_entry": 439.45860376601985,
+        "capped_position_pct_tpv": 5.684603,
+        "entry_high": 439.45860376601985,
+        "entry_low": 434.59849058495035,
+        "execution_rr": 1.874264,
         "grade": "A+",
         "m3_rr": 2.0,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 10.221444,
+        "raw_position_pct_tpv": 5.684603,
         "risk_budget_pct_tpv": 0.75,
-        "score": 96.0,
+        "score": 98.0,
         "setup": "PULLBACK",
-        "stop": 271.4832111712235,
-        "stop_distance_pct": 7.337515,
-        "target": 332.7694677116541,
-        "ticker": "WAB"
+        "stop": 381.47849058495035,
+        "stop_distance_pct": 13.193532,
+        "target": 548.1286603565545,
+        "ticker": "FFIV"
       },
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 203.5329932364509,
-        "capped_position_pct_tpv": 16.884609,
-        "entry_high": 203.5329932364509,
-        "entry_low": 200.84,
-        "execution_rr": 1.553191,
+        "assumed_entry": 979.8170624046,
+        "capped_position_pct_tpv": 4.493894,
+        "entry_high": 979.8170624046,
+        "entry_low": 957.6723439884998,
+        "execution_rr": 1.796868,
         "grade": "A+",
-        "m3_rr": 1.9999999999999962,
+        "m3_rr": 2.000000000000001,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 16.884609,
+        "raw_position_pct_tpv": 4.493894,
         "risk_budget_pct_tpv": 0.75,
-        "score": 94.0,
-        "setup": "BREAKOUT",
-        "stop": 194.49223022836574,
-        "stop_distance_pct": 4.441915,
-        "target": 217.57502939794483,
-        "ticker": "NTAP"
+        "score": 98.0,
+        "setup": "PULLBACK",
+        "stop": 816.2923439884999,
+        "stop_distance_pct": 16.689311,
+        "target": 1273.6494216126503,
+        "ticker": "LITE"
       }
     ]
   },
-  "generated_at": "2026-09-30T01:05:59.745201+00:00",
+  "generated_at": "2026-10-01T01:05:48.259643+00:00",
   "linkage": {
-    "m1_run_id": "M1-20260928-18450618",
-    "m2_run_id": "m2_20260928_e290633c612a",
-    "m3_run_id": "m2_20260928_e290633c612a"
+    "m1_run_id": "M1-20260929-440d1e1f",
+    "m2_run_id": "m2_20260929_d142759f918f",
+    "m3_run_id": "m2_20260929_d142759f918f"
   },
   "m1": {
     "pre_event_cap_pct": 50.0,
     "regime": "NEUTRAL",
-    "score": 57.1
+    "score": 53.1
   },
   "m2": {
     "candidate_count": 543,
@@ -84,10 +84,10 @@
   },
   "m3": {
     "m3_results_written": 538,
-    "ready_count": 28,
+    "ready_count": 19,
     "state_distribution": {
-      "READY": 28,
-      "REJECT": 500,
+      "READY": 19,
+      "REJECT": 509,
       "WATCH": 10
     }
   },
@@ -112,13 +112,13 @@
     "stable_reader_object": "output/daily_run_latest.json"
   },
   "source_generations": {
-    "daily": 1790730116770574,
-    "m1": 1790730159123282,
-    "m2": 1790730267001873,
-    "m3": 1790730287830733,
-    "m456": 1790730344868401,
-    "macro_input": 1790730312352284,
-    "macro_overlay": 1790730327309702
+    "daily": 1790816520324306,
+    "m1": 1790816559275443,
+    "m2": 1790816662315933,
+    "m3": 1790816680475118,
+    "m456": 1790816734447174,
+    "macro_input": 1790816703847053,
+    "macro_overlay": 1790816717822645
   },
   "source_objects": {
     "daily": "output/daily_incremental_audit.json",
@@ -130,6 +130,6 @@
     "macro_overlay": "output/macro_event_overlay_v1.json"
   },
   "status": "PASS",
-  "target_session": "2026-09-28",
+  "target_session": "2026-09-29",
   "version": "PRODUCTION_DAILY_AGGREGATE_V1"
 }
