@@ -22,80 +22,80 @@
       "PORTFOLIO_STATE_REQUIRED",
       "CORE_BOOST_SIGNAL_SOURCE_REQUIRED"
     ],
-    "candidate_count": 19,
-    "final_tactical_cap_pct": 37.5,
+    "candidate_count": 22,
+    "final_tactical_cap_pct": 50.0,
     "m6_status": "CORE_BOOST_SIGNAL_SOURCE_REQUIRED",
     "preview_top2": [
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 439.45860376601985,
-        "capped_position_pct_tpv": 5.684603,
-        "entry_high": 439.45860376601985,
-        "entry_low": 434.59849058495035,
-        "execution_rr": 1.874264,
+        "assumed_entry": 85.47599006659865,
+        "capped_position_pct_tpv": 2.89802,
+        "entry_high": 85.47599006659865,
+        "entry_low": 83.917252170012,
+        "execution_rr": 1.894304,
         "grade": "A+",
         "m3_rr": 2.0,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 5.684603,
+        "raw_position_pct_tpv": 2.89802,
         "risk_budget_pct_tpv": 0.75,
         "score": 98.0,
         "setup": "PULLBACK",
-        "stop": 381.47849058495035,
-        "stop_distance_pct": 13.193532,
-        "target": 548.1286603565545,
-        "ticker": "FFIV"
+        "stop": 63.35502483350337,
+        "stop_distance_pct": 25.879741,
+        "target": 127.37981368790925,
+        "ticker": "SWKS"
       },
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 979.8170624046,
-        "capped_position_pct_tpv": 4.493894,
-        "entry_high": 979.8170624046,
-        "entry_low": 957.6723439884998,
-        "execution_rr": 1.796868,
+        "assumed_entry": 263.33544960786946,
+        "capped_position_pct_tpv": 11.062052,
+        "entry_high": 263.33544960786946,
+        "entry_low": 261.78712609476224,
+        "execution_rr": 1.869918,
         "grade": "A+",
-        "m3_rr": 2.000000000000001,
+        "m3_rr": 2.0,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 4.493894,
+        "raw_position_pct_tpv": 11.062052,
         "risk_budget_pct_tpv": 0.75,
-        "score": 98.0,
+        "score": 97.0,
         "setup": "PULLBACK",
-        "stop": 816.2923439884999,
-        "stop_distance_pct": 16.689311,
-        "target": 1273.6494216126503,
-        "ticker": "LITE"
+        "stop": 245.4814759803264,
+        "stop_distance_pct": 6.779935,
+        "target": 296.7209115932948,
+        "ticker": "ABBV"
       }
     ]
   },
-  "generated_at": "2026-10-01T01:05:48.259643+00:00",
+  "generated_at": "2026-10-06T01:05:30.755763+00:00",
   "linkage": {
-    "m1_run_id": "M1-20260929-440d1e1f",
-    "m2_run_id": "m2_20260929_d142759f918f",
-    "m3_run_id": "m2_20260929_d142759f918f"
+    "m1_run_id": "M1-20261002-b2c92e19",
+    "m2_run_id": "m2_20261002_d732658a68e0",
+    "m3_run_id": "m2_20261002_d732658a68e0"
   },
   "m1": {
     "pre_event_cap_pct": 50.0,
     "regime": "NEUTRAL",
-    "score": 53.1
+    "score": 59.85
   },
   "m2": {
     "candidate_count": 543,
-    "eligible": 538,
-    "rejected": 5
+    "eligible": 536,
+    "rejected": 7
   },
   "m3": {
-    "m3_results_written": 538,
-    "ready_count": 19,
+    "m3_results_written": 536,
+    "ready_count": 22,
     "state_distribution": {
-      "READY": 19,
-      "REJECT": 509,
-      "WATCH": 10
+      "READY": 22,
+      "REJECT": 501,
+      "WATCH": 13
     }
   },
   "macro": {
-    "event_adjusted_cap_pct": 37.5,
-    "event_count": 1,
-    "event_risk_multiplier": 0.75,
-    "final_event_level": "HIGH"
+    "event_adjusted_cap_pct": 50.0,
+    "event_count": 0,
+    "event_risk_multiplier": 1.0,
+    "final_event_level": "WATCH"
   },
   "massive_api_requests_by_artifact": {
     "m2": 0,
@@ -112,13 +112,13 @@
     "stable_reader_object": "output/daily_run_latest.json"
   },
   "source_generations": {
-    "daily": 1790816520324306,
-    "m1": 1790816559275443,
-    "m2": 1790816662315933,
-    "m3": 1790816680475118,
-    "m456": 1790816734447174,
-    "macro_input": 1790816703847053,
-    "macro_overlay": 1790816717822645
+    "daily": 1791248519739638,
+    "m1": 1791248557301085,
+    "m2": 1791248653553788,
+    "m3": 1791248670196512,
+    "m456": 1791248716049753,
+    "macro_input": 1791248690778343,
+    "macro_overlay": 1791248701499384
   },
   "source_objects": {
     "daily": "output/daily_incremental_audit.json",
@@ -130,6 +130,6 @@
     "macro_overlay": "output/macro_event_overlay_v1.json"
   },
   "status": "PASS",
-  "target_session": "2026-09-29",
+  "target_session": "2026-10-02",
   "version": "PRODUCTION_DAILY_AGGREGATE_V1"
 }
