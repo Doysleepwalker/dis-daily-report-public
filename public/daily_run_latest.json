@@ -22,80 +22,80 @@
       "PORTFOLIO_STATE_REQUIRED",
       "CORE_BOOST_SIGNAL_SOURCE_REQUIRED"
     ],
-    "candidate_count": 22,
+    "candidate_count": 30,
     "final_tactical_cap_pct": 50.0,
     "m6_status": "CORE_BOOST_SIGNAL_SOURCE_REQUIRED",
     "preview_top2": [
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 85.47599006659865,
-        "capped_position_pct_tpv": 2.89802,
-        "entry_high": 85.47599006659865,
-        "entry_low": 83.917252170012,
-        "execution_rr": 1.894304,
+        "assumed_entry": 266.28898892159305,
+        "capped_position_pct_tpv": 9.582711,
+        "entry_high": 266.28898892159305,
+        "entry_low": 264.43752769601736,
+        "execution_rr": 1.866746,
         "grade": "A+",
         "m3_rr": 2.0,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 2.89802,
+        "raw_position_pct_tpv": 9.582711,
         "risk_budget_pct_tpv": 0.75,
-        "score": 98.0,
+        "score": 99.0,
         "setup": "PULLBACK",
-        "stop": 63.35502483350337,
-        "stop_distance_pct": 25.879741,
-        "target": 127.37981368790925,
-        "ticker": "SWKS"
+        "stop": 245.44762769601735,
+        "stop_distance_pct": 7.826595,
+        "target": 305.1945195343809,
+        "ticker": "ABBV"
       },
       {
         "actual_risk_pct_tpv": 0.75,
-        "assumed_entry": 263.33544960786946,
-        "capped_position_pct_tpv": 11.062052,
-        "entry_high": 263.33544960786946,
-        "entry_low": 261.78712609476224,
-        "execution_rr": 1.869918,
+        "assumed_entry": 441.3281373357703,
+        "capped_position_pct_tpv": 12.562246,
+        "entry_high": 441.3281373357703,
+        "entry_low": 437.09965666057434,
+        "execution_rr": 1.759276,
         "grade": "A+",
         "m3_rr": 2.0,
         "position_cap_applied": false,
-        "raw_position_pct_tpv": 11.062052,
+        "raw_position_pct_tpv": 12.562246,
         "risk_budget_pct_tpv": 0.75,
         "score": 97.0,
         "setup": "PULLBACK",
-        "stop": 245.4814759803264,
-        "stop_distance_pct": 6.779935,
-        "target": 296.7209115932948,
-        "ticker": "ABBV"
+        "stop": 414.97965666057434,
+        "stop_distance_pct": 5.97027,
+        "target": 487.68237767336836,
+        "ticker": "WAT"
       }
     ]
   },
-  "generated_at": "2026-10-06T01:05:30.755763+00:00",
+  "generated_at": "2026-10-07T01:05:15.030996+00:00",
   "linkage": {
-    "m1_run_id": "M1-20261002-b2c92e19",
-    "m2_run_id": "m2_20261002_d732658a68e0",
-    "m3_run_id": "m2_20261002_d732658a68e0"
+    "m1_run_id": "M1-20261005-40729902",
+    "m2_run_id": "m2_20261005_588f3e849cf4",
+    "m3_run_id": "m2_20261005_588f3e849cf4"
   },
   "m1": {
     "pre_event_cap_pct": 50.0,
     "regime": "NEUTRAL",
-    "score": 59.85
+    "score": 61.6
   },
   "m2": {
     "candidate_count": 543,
-    "eligible": 536,
-    "rejected": 7
+    "eligible": 537,
+    "rejected": 6
   },
   "m3": {
-    "m3_results_written": 536,
-    "ready_count": 22,
+    "m3_results_written": 537,
+    "ready_count": 30,
     "state_distribution": {
-      "READY": 22,
-      "REJECT": 501,
-      "WATCH": 13
+      "READY": 30,
+      "REJECT": 496,
+      "WATCH": 11
     }
   },
   "macro": {
     "event_adjusted_cap_pct": 50.0,
     "event_count": 0,
     "event_risk_multiplier": 1.0,
-    "final_event_level": "WATCH"
+    "final_event_level": "LOW"
   },
   "massive_api_requests_by_artifact": {
     "m2": 0,
@@ -112,13 +112,13 @@
     "stable_reader_object": "output/daily_run_latest.json"
   },
   "source_generations": {
-    "daily": 1791248519739638,
-    "m1": 1791248557301085,
-    "m2": 1791248653553788,
-    "m3": 1791248670196512,
-    "m456": 1791248716049753,
-    "macro_input": 1791248690778343,
-    "macro_overlay": 1791248701499384
+    "daily": 1791334918886170,
+    "m1": 1791334955643935,
+    "m2": 1791335047415890,
+    "m3": 1791335065149726,
+    "m456": 1791335103832634,
+    "macro_input": 1791335079884317,
+    "macro_overlay": 1791335090370194
   },
   "source_objects": {
     "daily": "output/daily_incremental_audit.json",
@@ -130,6 +130,6 @@
     "macro_overlay": "output/macro_event_overlay_v1.json"
   },
   "status": "PASS",
-  "target_session": "2026-10-02",
+  "target_session": "2026-10-05",
   "version": "PRODUCTION_DAILY_AGGREGATE_V1"
 }
